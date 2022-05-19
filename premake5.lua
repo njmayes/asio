@@ -33,6 +33,22 @@ project "asio"
 		runtime "Debug"
         symbols "on"
 
+	filter "configurations:ARMd"
+		runtime "Debug"
+        symbols "on"
+
+	filter "configurations:ARM64d"
+		runtime "Debug"
+		symbols "on"
+
     filter "configurations:Release"
 		runtime "Release"
         optimize "on"
+
+	filter "configurations:ARM"
+		runtime "Release"
+		optimize "on"
+
+	filter "configurations:ARM64"
+		runtime "Release"
+		optimize "on"
