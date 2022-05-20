@@ -29,6 +29,9 @@ project "asio"
         systemversion "latest"
 		defines "_WIN32_WINNT=0x0A00"
         
+    filter "system:linux"
+		pic "On"
+
     filter "configurations:Debug"
 		runtime "Debug"
         symbols "on"
