@@ -32,7 +32,7 @@ project "asio"
     filter "system:linux"
 		pic "On"
 
-    filter "configurations:Debug"
+    filter "configurations:x64d"
 		runtime "Debug"
         symbols "on"
 
@@ -44,7 +44,7 @@ project "asio"
 		runtime "Debug"
 		symbols "on"
 
-    filter "configurations:Release"
+    filter "configurations:x64"
 		runtime "Release"
         optimize "on"
 
