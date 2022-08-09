@@ -32,26 +32,10 @@ project "asio"
     filter "system:linux"
 		pic "On"
 
-    filter "configurations:x64d"
+    filter "configurations:Debug"
 		runtime "Debug"
         symbols "on"
 
-	filter "configurations:ARMd"
-		runtime "Debug"
-        symbols "on"
-
-	filter "configurations:ARM64d"
-		runtime "Debug"
-		symbols "on"
-
-    filter "configurations:x64"
+    filter "configurations:Release"
 		runtime "Release"
         optimize "on"
-
-	filter "configurations:ARM"
-		runtime "Release"
-		optimize "on"
-
-	filter "configurations:ARM64"
-		runtime "Release"
-		optimize "on"
