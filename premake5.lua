@@ -1,7 +1,7 @@
 project "asio"
 	kind "StaticLib"
 	language "C++"
-	cppdialect "C++17"
+	cppdialect "C++latest"
     staticruntime "off"
 
     targetdir 	("%{wks.location}/bin/%{prj.name}/" .. outputDir)
