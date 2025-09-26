@@ -39,3 +39,7 @@ project "asio"
     filter "configurations:Release"
 		runtime "Release"
         optimize "on"
+
+	filter "configurations:Profile"
+		runtime "Release"
+		optimize "on"
